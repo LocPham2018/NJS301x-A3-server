@@ -54,7 +54,7 @@ app.all('/', (req, res, next) => {
 	res.header('Access-Control-Allow-Headers', 'X-Requested-With');
 	next();
 });
-app.set('trust-proxy', 1);
+app.set('trust proxy', 1);
 
 app.use(express.json());
 
