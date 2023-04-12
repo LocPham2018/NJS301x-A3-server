@@ -26,7 +26,7 @@ app.use(
 			'https://njs-asm03-client.netlify.app',
 			'https://njs-asm03-admin.netlify.app',
 		],
-		methods: ['GET', 'POST'],
+		methods: ['GET', 'POST', 'PUT', 'OPTIONS', 'HEAD'],
 		credentials: true,
 	})
 );
