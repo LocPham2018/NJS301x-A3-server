@@ -19,18 +19,18 @@ const store = new MongoDbStore({
 	expires: 1000 * 60 * 60,
 });
 
-// app.use(
-// 	cors({
-// 		// origin: 'http://localhost:3000', // development purpose
-// 		origin: [
-// 			'https://njs-asm03-client.netlify.app',
-// 			'https://njs-asm03-admin.netlify.app',
-// 		],
-// 		methods: ['GET', 'POST'],
-// 		credentials: true,
-// 	})
-// );
-app.use(cors());
+app.use(
+	cors({
+		// origin: 'http://localhost:3000', // development purpose
+		origin: [
+			'https://njs-asm03-client.netlify.app',
+			'https://njs-asm03-admin.netlify.app',
+		],
+		methods: ['GET', 'POST'],
+		credentials: true,
+	})
+);
+// app.use(cors());
 
 app.use(
 	session({
